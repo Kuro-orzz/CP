@@ -12,13 +12,13 @@ using namespace std;
 
 void solve(){
     int n, q; cin >> n >> q;
-    vector<vi> a(n+1, vi(n+1, 1));
+    vector<vector<ll>> a(n+1, vector<ll>(n+1, 1));
     for(int i = 2; i <= n; i++)
         for(int j = 2; j <= n; j++)
             a[i][j] = (a[i-1][j] + a[i][j-1]) % MOD;
     while(q--){
         int u, v; cin >> u >> v;
-        cout << a[5-u+1][5-v+1] << '\n';
+        cout << a[n-u+1][n-v+1] << '\n';
     }
 }
 
