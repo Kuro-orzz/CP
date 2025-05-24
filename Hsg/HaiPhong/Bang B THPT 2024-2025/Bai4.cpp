@@ -12,7 +12,7 @@ using namespace std;
 
 void solve(){
     int n, q; cin >> n >> q;
-    vector<vector<ll>> a(n+1, vector<ll>(n+1, 1));
+    vector<vector<ll> > a(n+1, vector<ll>(n+1, 1));
     for(int i = 2; i <= n; i++)
         for(int j = 2; j <= n; j++)
             a[i][j] = (a[i-1][j] + a[i][j-1]) % MOD;
@@ -25,10 +25,8 @@ void solve(){
 int main(){
     ios_base::sync_with_stdio(NULL);cin.tie(NULL);
     // cin.exceptions(cin.failbit);
-    #ifndef ONLINE_JUDGE
-    freopen("test.inp", "r", stdin);
-    freopen("test.out", "w", stdout);
-    #endif
+    freopen("bai4.inp", "r", stdin);
+    freopen("bai4.out", "w", stdout);
     // int t; cin >> t;
     // while(t--)
         solve();

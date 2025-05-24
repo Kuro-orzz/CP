@@ -38,10 +38,8 @@ void solve(){
 int main(){
     ios_base::sync_with_stdio(NULL);cin.tie(NULL);
     // cin.exceptions(cin.failbit);
-    #ifndef ONLINE_JUDGE
-    freopen("test.inp", "r", stdin);
-    freopen("test.out", "w", stdout);
-    #endif
+    freopen("bai1.inp", "r", stdin);
+    freopen("bai1.out", "w", stdout);
     // int t; cin >> t;
     // while(t--)
         solve();
