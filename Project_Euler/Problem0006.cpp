@@ -21,14 +21,14 @@ using namespace std;
 // a = 1/3, b = 1/2, c = 1/6
 
 // => fn = (x^3)/3 + (x^2)/2 + x/6
-//		 = (2x^3+3x^2+x)/6
+//       = (2x^3+3x^2+x)/6
 
 int main() {
-	ll n = 100;
-	ll fn = (2*powl(n, 3) + 3*powl(n, 2) + n)/6;
-	int k = 0;
-	ll t = powl(n*(1+n)/2, 2);
-	cout << fn << " " << t << '\n';
-	cout << t-fn;
-	return 0;
+    ll n = 100;
+    ll fn = (2*powl(n, 3) + 3*powl(n, 2) + n)/6;
+    int k = 0;
+    ll t = powl(n*(1+n)/2, 2);
+    cout << fn << " " << t << '\n';
+    cout << t-fn;
+    return 0;
 }
